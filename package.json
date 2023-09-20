@@ -1,7 +1,6 @@
 {
   "name": "2708-node-lib-md",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -19,6 +18,8 @@
   },
   "homepage": "https://github.com/alura-cursos/2708-node-lib-md#readme",
   "dependencies": {
-    "chalk": "5.0.1"
-  }
+    "chalk": "5.0.1",
+    "moment": "^2.29.4"
+  },
+  "description": ""
 }
