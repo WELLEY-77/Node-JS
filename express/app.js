@@ -1,14 +1,10 @@
 import express from 'express'
+import checkListRouter from '../src/routers/checklist'
 
 const app = express();
+app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send('<h1> Express </h1>')
-})
-
-app.get('/json', (req, res) => {
-    res.json({title:'Space X', done:true})
-})
+app.use("/checklist", checkListRouter)
 
 app.listen(3000, () => {
     console.log('Servidor ativo')
